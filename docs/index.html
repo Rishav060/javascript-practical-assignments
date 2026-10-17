@@ -1,0 +1,55 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Inventory Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Product Inventory & Analytics</h1>
+        <p>Manage products and track inventory value</p>
+    </header>
+
+    <main>
+        <section class="form">
+            <h2>Add New Product</h2>
+            <input type="text" id="productName" placeholder="Product name">
+            <input type="number" id="productPrice" placeholder="Product price">
+            <button id="addProduct">Add Product</button>
+            <p id="message"></p>
+        </section>
+
+        <section class="analytics">
+            <div class="card">
+                <h3>Total Products</h3>
+                <p id="totalProducts">0</p>
+            </div>
+            <div class="card">
+                <h3>Inventory Value</h3>
+                <p id="totalValue">$0</p>
+            </div>
+        </section>
+
+        <section>
+            <h2>Inventory Roster</h2>
+            <div id="inventory"></div>
+        </section>
+
+        <section>
+            <h2>Affordable Products (Under $200)</h2>
+            <div id="affordable"></div>
+        </section>
+
+        <section>
+            <h2>Formatted Report</h2>
+            <div id="report"></div>
+        </section>
+    </main>
+
+    <footer>JavaScript Internship Capstone Project</footer>
+    <script src="script.js"></script>
+</body>
+</html>
